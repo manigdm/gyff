@@ -1,0 +1,140 @@
+@import "bootstrap.less";
+@import "font-awesome.less";
+@import "webfonts.less";
+@import "slick.less";
+
+/*******************common-style start***************************************/
+	body{
+		font-weight: 100;
+		font-family: "gotham-light";
+	}
+	h1,h2,h3,h4,h5,h6{
+		margin:0;
+		font-weight: 100;
+		font-family: "gotham-light";
+	}
+	ul{
+		margin: 0px;
+		padding-left: 0px;
+	}
+	p{
+		margin-bottom: 0;
+		font-size: 15px;
+		line-height: 1.8;
+	}
+	input{
+		font-weight: 200;
+	}
+	a,a:hover, a:focus{
+		text-decoration: none !important;
+		color: inherit;
+	}
+
+	.ptr{
+		cursor: pointer;
+	}
+
+	.clearfix{
+		clear: both;
+		overflow: hidden;
+	}
+	.overflow-visible{
+		overflow: visible;
+	}
+	.v-align {
+	    float: none;
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.fixed{
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 5555;
+		background-color: #fff;
+		box-shadow: 0 0px 1px 1px rgba(156, 156, 156, 0.13);
+		border-bottom: 1px solid #dadada;
+		opacity: 0.98;
+		will-change: transform;
+	}
+	.col-centered{
+		margin: 0 auto;
+		float: none;
+		overflow: hidden;
+	}
+	.pos-rel{
+		position: relative;
+	}
+	.pos-abs{
+		position: absolute;
+		top: 0px;
+	}
+
+/*************bg-color-style start******/
+	.bg-dark-blue{
+		background-color: #273643;
+	}
+/*************bg-color-style end******/
+
+/*************text-color-style start******/
+	.txt-dark-blue{
+		color: #273643;
+	}
+	.txt-light-green{
+		color: #09a289;
+	}
+	.txt-light-gray{
+		color: #ececec;
+	}
+	.txt-light-gray-blue{
+		color: #768898;
+	}
+	.txt-white{
+		color: #fff;
+	}
+	.txt-black{
+		color: #1e1e1e;
+	}	
+
+/*************text-color-style end******/
+
+/*******************common-style end***************************************/
+
+/*******************navigation-style start***************************************/
+
+.head{
+	padding: 30px 0px;
+	.navigation{
+		ul li{
+			display: inline-block;
+			padding: 6px 26px;
+			font-size: 16px;
+		}
+	}
+}
+.navigation ul li a:hover{
+	color: #09a289;
+}
+/*******************navigation-style start***************************************/
+
+
+.btn-green-sm{
+	background-color: #09a289;
+	padding: 8px 28px;
+	border-color: #09a289;
+}
+.btn-green-sm:hover{
+	background-color: #09a289;
+	border-color: #09a289;
+	opacity: 0.9;
+}
+
+
+
+.home-banner{
+	background: url("../img/home-bg-img.png") no-repeat 0 0px; 
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+}
