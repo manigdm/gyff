@@ -1,0 +1,43 @@
+{
+	"memberLits": [{
+		"firstName": "Babu",
+		"lastName": "Velusamy",
+		"dob": "18.02.1985",
+		"age": "29",
+		"address": "3/22,Vinayakar Kovil Street,Gudimangalam & Post,Udumalpet T.K,Tiruppur D.T,Pincode:642201",
+		"phone": "9600636663",
+		"photo": "../img/mani.jpg"
+	}, {
+		"firstName": "Ganesh Kumar",
+		"lastName": "Palanisamy",
+		"dob": "10.05.1986",
+		"age": "28",
+		"address": "8/324,North Thottam,Kumarapalayam & Post,Udumalpet T.K,Tiruppur D.T",
+		"photo": "9095499505",
+		"photo": "../img/mani.jpg"
+	}, {
+		"firstName": "Gokulakrishnan",
+		"lastName": "Sanmugam",
+		"dob": "08.09.1996",
+		"age": "18",
+		"address": "2/92A,Angalamman Kovil Street,Gudimangalam & Post,Udumalpet T.K,Tiruppur D.T,Pincode:642201",
+		"photo": "9942299236",
+		"photo": "../img/mani.jpg"
+	}, {
+		"firstName": "Govindsamy",
+		"lastName": "Sundarraj",
+		"dob": "17.08.1989",
+		"age": "25",
+		"address": "2/104,West Street,Gudimangalam & Post,Udumalpet T.K,Tiruppur D.T,Pincode:642201",
+		"photo": "9842809588",
+		"photo": "../img/mani.jpg"
+	}, {
+		"firstName": "Kanagara",
+		"lastName": "Nagaraj",
+		"dob": "27.07.1990",
+		"age": "24",
+		"address": "2/92A,Angalamman Kovil Street,Gudimangalam & Post,Udumalpet T.K,Tiruppur D.T,Pincode:642201",
+		"photo": "9842310598",
+		"photo": "../img/mani.jpg"
+	}]
+}
