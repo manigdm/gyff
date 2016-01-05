@@ -45,53 +45,41 @@
                     </div>
                 </div>
             </section>
-            <section class="home-banner" id="home-banner"></section>
-            <section class="block-container">
+            <section class="block-container clearfix">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center p-top-bottom-space">
-                            <div class="hr-line-green"></div>
-                            <h3 class="txt-dark-blue p-top-space">Welcome</h3>
-                            <p class="txt-dark-blue p-top-space p-bottom-space">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly believable. If you are going 
-                            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of 
-                            text</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block-container bg-dark-blue">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center p-top-bottom-space txt-light-gray">
-                            <div class="hr-line-green"></div>
-                            <h3 class="p-top-space">What we Do</h3>
-                            <p class="p-top-space p-bottom-space">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly believable. If you are going 
-                            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of 
-                            text</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="block-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center p-top-bottom-space txt-light-gray">
-                            <div class="hr-line-green"></div>
-                            <h3 class="p-top-space txt-dark-blue">What You Can Do</h3>
-                            <p class="p-top-space p-bottom-space txt-dark-blue">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,by injected humour, or randomised words which don't look even slightly believable. If you are going 
-                            to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of 
-                            text</p>
-                            <div class="p-top-space col-md-2 col-centered">
-                                <div class="p-top-space pos-rel">
-                                    <a href="" class="btn btn-success btn-green-sm">Donate Payment</a>
-                                    <!-- <span class="pos-abs"><i class="glyphicon glyphicon-menu-left"></i></span> -->
+                        <div class="col-md-12 p-top-bottom-space">
+                            <div class="col-md-7 bg-white p-top-space">
+                                <div class="col-md-12 p-init">
+                                    <h3 class="col-md-12 txt-dark-blue">Get in touch with Us</h3>
+                                    <div class="col-md-12 txt-light-gray-blue p-top-space">to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</div>
+                                    <h4 class="col-md-12 p-top-space txt-dark-blue">Send us a message</h4>
+                                    <div class="col-md-6 p-top-space">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-md" placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-md" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 p-top-space p-bottom-space">
+                                        <div class="form-group">
+                                          <textarea class="form-control textarea-md"></textarea>
+                                        </div>
+                                        <div class="form-group clearfix col-md-6 pull-right p-init">
+                                          <button type="button" class="btn btn-default col-md-12 btn-green p-init">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div id="map" style="height:370px;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="block-container bg-black-blue">
+            <section class="block-container bg-black-blue clearfix">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 p-top-bottom-space txt-light-gray">
@@ -131,5 +119,29 @@
         <script src="js/jquery/jquery-2.1.4.min.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
         <script src="js/scripts/main.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script type="text/javascript">
+            function initialize() {
+                var mapCanvas = document.getElementById('map');
+                var mapOptions = {
+                  center: new google.maps.LatLng(44.5403, -78.5463),
+                  zoom: 8,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  backgroundColor: '#b9ad72'
+                }
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+                google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </body>
 </html>
